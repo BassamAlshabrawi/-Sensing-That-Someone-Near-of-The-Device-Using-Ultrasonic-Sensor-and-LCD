@@ -51,7 +51,7 @@ In this project, we have programmed the Arduino to obtain the distance between t
 LCD (Liquid Crystal Display) is a monitor that displays what the programmer wants to display in different areas.
 The project contains a video that starts playing when the person approaches the device for 3 seconds. Therefore, the LCD is used to simulate the video shown to the person connected with Arduino (Slave) as shown in figure (1) below.
 
-![The Project Circuit](https://user-images.githubusercontent.com/85504873/126889452-b1ce06d1-3255-4adc-a753-7c753a0bd13d.png)
+![The Electronic Circuit](https://user-images.githubusercontent.com/85504873/126889646-7fabea48-477e-4e49-a7eb-db878fcd2203.png)
 
                                                                           figure (1)
 
@@ -65,7 +65,7 @@ As we mentioned before, the ultrasonic sensor chick if there is any person in fr
 
 Else, the LCD will stop playing, at the same time the red LED will be ON and the green LED will be OFF as shown in figure (3) below.
 
-![OFF state_Sensing That Someone Near of The Device Using Ultrasonic Sensor ](https://user-images.githubusercontent.com/85504873/126889458-6669d6e7-38ea-44f5-8185-49354866a9fb.png)
+![OFF state Sensing That Someone Near of The Device Using Ultrasonic Sensor](https://user-images.githubusercontent.com/85504873/126889631-4be29c3b-76c4-43a6-a25a-39c5cd734e79.png)
 
                                                                           figure (3)
 ## Code
