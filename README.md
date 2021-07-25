@@ -1,12 +1,13 @@
-# -Sensing-That-Someone-Near-of-The-Device-Using-Ultrasonic-Sensor-and-LCD
+# Sensing-That-Someone-Near-of-The-Device-Using-Ultrasonic-Sensor-and-LCD
 
 ## Introduction 
 
 Sometimes when we come in the mall entrance, we ask ourselves how the automatic door knows if there is a person in front of the door or not, the answer to the question is by using different techniques of detection as an inductive loop, infrared, etc.
-In this project, we will see how we can apply the same idea of the detection of the person using the ultrasound technique to detect if someone is in front of the device or not to take suitable action. 
+In this project, we will see how we can apply the same idea of the detection of the person using the ultrasound technique to detect if someone is in front of the device or not to take suitable action as (https://www.tinkercad.com/things/9glqIBpPR3G-sensing-that-someone-near-of-the-device-using-ultrasonic-sensor/editel) . 
 
 
 ## Components
+
 *	2x Arduino UNO.
 *	Ultrasonic Sensor.
 *	16x2 LCD.
@@ -22,7 +23,7 @@ In this project, we will see how we can apply the same idea of the detection of 
 
 The project needs to use the Bluetooth wireless communication technique to make the communication between the Ultrasonic sensor and LCD.
 However, the problem is we do not have the Bluetooth module to achieve that, so we have used Two Arduino Communication to achieve the communication technique.
-Two Arduino Communication is technique that make two Arduino communicate together as Master and Slave, in this project, the Master is the Arduino that connected with the sensor, and the other is Slave.
+Two Arduino Communication is technique that make two Arduino communicate together as Master and Slave, in this project, the Master is the Arduino that connected with the sensor, and the other is Slave .
 
 In order to achieve the Two Arduino Communication technique, we have connected two Arduino together by:
 
@@ -46,15 +47,27 @@ In this project, we have programmed the Arduino to obtain the distance between t
 
 
 ## LCD
+
 LCD (Liquid Crystal Display) is a monitor that displays what the programmer wants to display in different areas.
 The project contains a video that starts playing when the person approaches the device for 3 seconds. Therefore, the LCD is used to simulate the video shown to the person connected with Arduino (Slave) as shown in figure (1) below.
+
+![The Project Circuit](https://user-images.githubusercontent.com/85504873/126889452-b1ce06d1-3255-4adc-a753-7c753a0bd13d.png)
+
+                                                                          figure (1)
 
 When we see figure (1) above, we will find that the potentiometer is connected with the LCD, the purpose of that is to control the light of the LCD by changing the resistance of the potentiometer.
 
 As we mentioned before, the ultrasonic sensor chick if there is any person in front of the device or not, if there is a person in the allowed distance range (1m) from the sensor for 3 seconds, the LCD will start playing “WELCOME TO YOU “, in the same time the green LED will be ON and red LED will be OFF as shown in figure (2) below.
+
+![ON state Sensing That Someone Near of The Device Using Ultrasonic Sensor](https://user-images.githubusercontent.com/85504873/126889431-8bbac025-621b-4ce5-96f7-924c642baac0.png)
+
+                                                                          figure (2)
+
 Else, the LCD will stop playing, at the same time the red LED will be ON and the green LED will be OFF as shown in figure (3) below.
 
+![OFF state_Sensing That Someone Near of The Device Using Ultrasonic Sensor ](https://user-images.githubusercontent.com/85504873/126889458-6669d6e7-38ea-44f5-8185-49354866a9fb.png)
 
+                                                                          figure (3)
 ## Code
 
 ## 1- Arduino Master Code
